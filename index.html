@@ -21,7 +21,7 @@
           <ul class="menu-nav">
             <li><a href="#home">Home</a></li>
             <li><a href="#data">Data</a></li>
-            <li><a href="#clasification">Classification</a></li>
+            <li><a href="#classification">Classification</a></li>
             <li><a href="#vector_machine">Vector Machine</a></li>
             <li><a href="#viz">Viz</a></li>
           </ul>
@@ -32,7 +32,8 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <div id="main_content" class="inner">
-        <section id="home">
+        <span class="anchor" id="home"></span>
+        <div class="section">
 <p>What do we know about our politicians? Do we have enough information about what decisions they make? Are journals really telling us everything that should be important?</p>
 
 <p>What if we could analyze the information from official documents in a more efficient way without even need to read what’s inside?</p>
@@ -50,9 +51,10 @@
   <li><a href="https://es.linkedin.com/in/ramon-casassas-garcia-339a09a9" target="_blank">Ramón Casassas</a></li>
 </ul>
 
-</section>
+</div>
 
-<section id="data">
+<span class="anchor" id="data"></span>
+<div class="section">
 <h3>Data</h3>
 
 <p>To obtain official documents that are available in the website we need to scrap them. To do that we used the advanced search, that allowed us to be more specific about the kind of documents we wanted to analyze.</p> 
@@ -70,23 +72,27 @@
 
 
 <p>The python packages to apply this points were nltk, string and textblob.</p>
-</section>
+</div>
 
-<section id="classification">
+<span class="anchor" id="classification"></span>
+<div class="section">
 <h3>Classification</h3>
 
 <p>IOnce the text inside each document is cleaned, these were classified based in the presence of key words in each text. To do that we had to create first vectors for each text to measure the frequency of the same (or similar) words inside each one. And after that we applied a topic model using a python program called lda to classify all documents by topics characterized by a group of words.</p>
-</section>
+</div>
 
-<section id="vector_machine">
+
+<span class="anchor" id="vector_machine"></span>
+<div class="section">
 <h3>Vector Machine</h3>
 
-</section>
+</div>
 
-<section id="viz">
-<h3>Vizualization</h3>
-
-      </section>
+<span class="anchor" id="viz"></span>
+<div class="section">
+<h3>Viz</h3>
+<iframe src="visualisation.html" style="width: 960px; height: 960px;"></iframe>
+      </div>
       </div>
     </div>
 
