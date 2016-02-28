@@ -51,7 +51,7 @@ Theme Styles
 body {
   box-sizing: border-box;
   color:#373737;
-  background: #212121;
+  background: #f2f2f2;
   font-size: 16px;
   font-family: 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -103,7 +103,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color: #007edf;
+  color: #836449;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -255,6 +255,13 @@ form {
   padding: 20px;
 }
 
+iframe {
+  width: 960px;
+    height: 960px;
+    overflow: hidden;
+}
+    
+
 /*******************************************************************************
 Full-Width Styles
 *******************************************************************************/
@@ -268,6 +275,13 @@ Full-Width Styles
   max-width: 800px;
   padding: 20px 10px;
   margin: 0 auto;
+}
+
+.anchor{
+  display: block;
+  height: 100px; /*same height as header*/
+  margin-top: -100px; /*same height as header*/
+  visibility: hidden;
 }
 
 #forkme_banner {
@@ -285,7 +299,7 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: url(../images/dogc_website.jpg) no-repeat;
+  background: url('../images/dogc_website.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -352,7 +366,7 @@ ul.menu-nav {
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom left;
+  background: url('../images/sprite_download.png') no-repeat bottom left;
 }
 
 .tar_download_link {
@@ -362,16 +376,16 @@ ul.menu-nav {
   height:70px;
   text-indent: -5000px;
   overflow: hidden;
-  background: url(../images/sprite_download.png) no-repeat bottom right;
+  background: url('../images/sprite_download.png') no-repeat bottom right;
   margin-left: 10px;
 }
 
 .zip_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top left;
+  background: url('../images/sprite_download.png') no-repeat top left;
 }
 
 .tar_download_link:hover {
-  background: url(../images/sprite_download.png) no-repeat top right;
+  background: url('../images/sprite_download.png') no-repeat top right;
 }
 
 #main_content_wrap {
@@ -451,4 +465,3 @@ Small Device Styles
   }
 
 }
-
