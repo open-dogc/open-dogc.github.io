@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="open-dogc.GitHub.io : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/styles.css">
+
+    <title>Open DOGC</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/open-dogc"></a>
+
+          <h1 id="project_title">Open DOGC</h1>
+          
+          <ul class="menu-nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="data.html">Data</a></li>
+            <li><a href="classification.html">Classification</a></li>
+            <li><a href="vector_machine.html">Vector Machine</a></li>
+            <li><a href="visualization.html">Visualization</a></li>
+          </ul>
+        </header>
+    </div>
+
+   <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+		<div id="main_content" class="inner">
+			
+
+			<span class="anchor" id="data"></span>
+			<div class="section">
+				<h3>Data</h3>
+
+				<p>To obtain official documents that are available in the website we need to scrap them. To do that we used the advanced search, that allowed us to be more specific about the kind of documents we wanted to analyze.</p> 
+
+				<p>Documents are written in Catalan, although they can also be downloaded in Spanish. However, the Spanish download returns part of the text in Catalan. Catalan is a difficult language to apply cleaning packages of text in python, and a text with two languages also implies other challenges. To solve that, we translated all documents to English in order to apply the cleaning techniques available in python. Translation was performed using textblob.</p>
+
+				<p>Once all documents are downloaded, the text inside the document needs to be cleaned in order to be analyzed. Data cleaning was performed in several steps:</p>
+
+				<ol>
+				  <li>Tokenization</li>
+				  <li>Removal of punctuation</li>
+				  <li>Removal of unnecessary words</li>
+				  <li>Stemming of words</li>
+				</ol>
+
+
+				<p>The python packages to apply this points were nltk, string and textblob.</p>
+			</div>
+	
+		</div>
+	</div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+  
+
+</body></html>
