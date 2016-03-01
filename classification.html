@@ -33,9 +33,22 @@
 			
 			<span class="anchor" id="classification"></span>
 			<div class="section">
-				<h3>Classification</h3>
+				<h2>Classification</h2>
 
-				<p>Once the text inside each document is cleaned, we classified them using the most frequent words in them. To do that we applied a topic model using LDA from python.</p>
+				<p>Once the text inside each document is cleaned, we applied a topic model to obtain a categorization of documents based in the most frequent words present in them. The topic model used was LDA (Latent Dirichlet Allocation) for python.</p>
+
+        <p>LDA is a hierarchical Bayesian model that allows us to create topics from different texts based in the top words present within the texts. We supervised manually the topic model and we created 5 topics:</p>
+
+        <ol>
+          <li>Topic 0 - Environment and territory</li>
+          <li>Topic 1 - Health</li>
+          <li>Topic 2 - Employment and Wellbeing (Social Security)</li>
+          <li>Topic 3 - Legal matters</li>
+          <li>Topic 4 - Audiovisual</li>
+        </ol>
+
+        <p>With the topic model done, we can apply a machine learning technique to classify new documents. We used both Support Vector Machine (SVM) and Logistic Regression (LR). SVM of Multiclass learning was the model that had better performance.</p>
+
 			</div>
 
 
