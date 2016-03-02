@@ -106,7 +106,7 @@ var d = [
 			.attr("y", 10)
 			.attr("font-size", "12px")
 			.attr("fill", "#404040")
-			.text("What % of documents issued by an institution");
+			.text("What % of documents are issued by an institution");
 		
 		//Initiate Legend	
 		var legend = svg.append("g")
