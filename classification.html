@@ -34,21 +34,35 @@
 			<span class="anchor" id="classification"></span>
 			<div class="section">
 				<h2>Classification</h2>
+				<h3>Part I</h2>
+	<p>The first part of the project was performed using the document type texts.</p>	
+	
+	<p>Once the text inside each document is cleaned, we applied a topic model to obtain a categorization of documents based in the most frequent words present in them. The topic model used was LDA (Latent Dirichlet Allocation) for python.</p>
+        <p>LDA is a hierarchical Bayesian model that allows us to create topics from different texts based in the top words present within the texts.</p>
 
-				<p>Once the text inside each document is cleaned, we applied a topic model to obtain a categorization of documents based in the most frequent words present in them. The topic model used was LDA (Latent Dirichlet Allocation) for python.</p>
+	<p>Firstly, a vocabulary was created using all words present in texts. Secondly, the frequency each word appeared in each text was organized in a documents term matrix. This term matrix was then used as the input for the LDA model. </p>
+	<p>The LDA is a supervised algorithm so we had to establish the number of topics and the number of important words for the classification. After a manual supervision of the results, the final LDA model was created with 5 topics and 10 top words.</p>
 
-        <p>LDA is a hierarchical Bayesian model that allows us to create topics from different texts based in the top words present within the texts. We supervised manually the topic model and we created 5 topics:</p>
-
+	<p>Concretely, the 5 topics were classified as:</p>
         <ol>
           <li>Topic 0 - Environment and territory</li>
           <li>Topic 1 - Health</li>
           <li>Topic 2 - Employment and Wellbeing (Social Security)</li>
           <li>Topic 3 - Legal matters</li>
-          <li>Topic 4 - Audiovisual</li>
+          <li>Topic 4 - Media and audiovisual</li>
         </ol>
 
-        <p>With the topic model done, we can apply a machine learning technique to classify new documents. We used both Support Vector Machine (SVM) and Logistic Regression (LR). SVM of Multiclass learning was the model that had better performance.</p>
-
+	<p>However, now a question arises: Are these words really useful for topic classification?</p>
+	
+	<p>In order to answer that, we apply machine learning techniques to assess whether these words are good classifiers. Multiclass Support Vector Machine (SVM) and Logistic Regression (LR) were the techniques used to evaluate the LDA model. 80% of the texts were used as training set and 20% as test set.</p>
+	<p>The results obtained were the following:</p>
+	<img src="classif1.png">
+	
+	<p>As it can be observed, both SVM and LR showed a 86.25% of accuracy.</p>
+	
+				<h3>Part II</h2>
+	<p>The second part of the project was focused on analyzing the documents from specific persons. The aim was to compare two political groups: CiU and PSC.</p>
+	<p>These new texts were processed in the same way the previous texts were. Once texts were translated and cleaned, the SVM model previously created was applied to these texts. With this step, each document related to each person was classified into one of the five topics mentioned before.</p>
 			</div>
 
 
