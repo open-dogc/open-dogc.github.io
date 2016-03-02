@@ -38,9 +38,15 @@
         
         <p>To obtain official documents that are available in the website we need to scrap them. To do that we used the advanced search, that allowed us to be more specific about the kind of documents we wanted to analyze.</p>
         
+        <img src="data1.png">
+        
         <p>DOGC documents are published in both html and pdf format. In our project, the automatic scraping process was performed using the html files, as they provide easier access to information and also add specific summaries for each document.</p>
 
+        <img src="data2.png">
+
         <p>From the scraping, both basic information and complete texts were obtained.</p>
+
+        <img src="data3.png">
         
         <p>In order to gather better understanding of the information provided by the DOGC documents, we did two kinds of search. Concretely:</p>
 
@@ -48,11 +54,16 @@
 				  <li>100 documents per document type (agreements, edicts, decrees and resolutions)</li>
 				  <li>50 documents per person (José Montilla,  Antoni Castells, Manuela de Madre, Montserrat Tura, Miquel Iceta, Ernest Maragall, Artur Mas, Joana Ortega, Felip Puig, Meritxell Borràs and Oriol Pujol)</li>
 				 </ol>
+
 	<p>These documents were ranked by relevancy prior to their download.</p>
+
+        <img src="data4.png">
 	
         <p>Documents downloaded were stored in a MongoDB dataset.<p>
         
         <p>The main DOGC language is Catalan. Catalan is a difficult language to apply cleaning packages of text in python as less text processing tools are available. To solve this problem, we translated all documents to English in order to apply the cleaning techniques available in python. Translation was performed using textblob (http://textblob.readthedocs.org/).</p>
+
+        <img src="data5.png">
         	
         <p>After that, the translated text was cleaned in order to be analyzed. Data cleaning was performed in several steps:</p>
 
@@ -64,7 +75,10 @@
 				</ol>
 
 
-				<p>The python packages to apply these points were numpy, pandas, nltk, string and textblob.</p>
+	<p>The python packages to apply these points were numpy, pandas, nltk, string and textblob.</p>
+
+        <img src="data6.png">
+
 			</div>
 	
 		</div>
